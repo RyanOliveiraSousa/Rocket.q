@@ -1,0 +1,166 @@
+.content{
+    max-width: min(112rem, 90%)
+}
+
+#room header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#room header .buttons{
+    display: flex;
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: .8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    padding: 1.3rem 3.2rem;
+}
+
+#room header .buttons .button:nth-child(2) img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/*** QUESTION FORM ***/
+#question-form h2{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+   line-height: 4.2rem;
+
+}
+#question-form form{
+
+    border: .2rem solid var(--grayblue);
+    padding: 1.6rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    
+    margin-bottom: 1.6rem;
+}
+#question-form textarea{
+    resize: none;
+    width: 100%;
+    outline: none;
+    background: transparent;
+}
+#question-form form textarea::placeholder{
+
+    color: var(--grayblue);
+}
+#question-form form footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}                               /* > quer dizer divs filha da div*/
+#question-form form footer > div{
+    display: flex;
+    color: var(--icons-details);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+#question-form footer button{
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+
+}
+/*** Questions *//***/
+
+.question-wrapper{
+
+    background: var(--lightblue);
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+   padding: 2.4rem;
+}
+.question-wrapper .question-content{
+    display: flex;
+    align-items: flex-start;
+
+}
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .question-content p{
+    margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+   min-height: 5.5rem;
+
+}
+
+.question-wrapper .action{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.question-wrapper .action > a{
+    display: flex;
+    align-items: center;
+
+
+}
+.question-wrapper .action > a > img{
+    margin-right: .8rem;
+}
+.question-wrapper .action > a + a{ /* '+' serve pra ser o css ser aplicado no irmao do a*/
+    margin-left: 2.4rem;
+}
+
+/*********Questions Read */
+
+.question-wrapper.read{
+
+    background: var(--graymedium);
+    opacity: 0.5;
+}
+.question-wrapper.read .question-content .user{
+    background: var(--grayblue);
+}
+
+/* NO questions */
+
+.noquestions{
+
+    text-align: center;
+}
+.noquestions img{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+.noquestions p:nth-child(2){
+
+font-family: 'Poppins', sans-serif;
+font-size: 1.8rem;
+font-weight: 600;
+}
+.noquestions p:nth-child(3){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
+}
